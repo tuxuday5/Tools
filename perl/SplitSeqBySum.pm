@@ -28,7 +28,7 @@ sub GetEqualDistanceFor($$) {
     }
   } 
 
-  push @EqualDistance, [$StartNo,$Till];
+  push @EqualDistance, [$StartNo,$Till] if $StartNo < $Till;
 
   return [@EqualDistance];
 }
